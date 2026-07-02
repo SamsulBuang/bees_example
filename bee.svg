@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="100%" stop-color="#ffe082"/>
+    </radialGradient>
+    <radialGradient id="petalGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fff59d"/>
+      <stop offset="100%" stop-color="#fbc02d"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="800" height="500" fill="url(#sky)"/>
+
+  <!-- sun glow -->
+  <circle cx="680" cy="80" r="60" fill="#ffecb3" opacity="0.8"/>
+
+  <!-- ground -->
+  <rect x="0" y="420" width="800" height="80" fill="#c5e1a5"/>
+
+  <!-- stem -->
+  <path d="M400 500 C 395 400, 410 320, 400 250" stroke="#558b2f" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M400 350 C 360 340, 330 360, 310 340" stroke="#558b2f" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="300" cy="335" rx="28" ry="14" fill="#7cb342" transform="rotate(-20 300 335)"/>
+
+  <!-- flower -->
+  <g transform="translate(400,220)">
+    <g id="petals">
+      <ellipse cx="0" cy="-70" rx="34" ry="55" fill="url(#petalGrad)"/>
+      <ellipse cx="0" cy="70" rx="34" ry="55" fill="url(#petalGrad)"/>
+      <ellipse cx="-70" cy="0" rx="55" ry="34" fill="url(#petalGrad)"/>
+      <ellipse cx="70" cy="0" rx="55" ry="34" fill="url(#petalGrad)"/>
+      <ellipse cx="-50" cy="-50" rx="50" ry="30" fill="url(#petalGrad)" transform="rotate(45 -50 -50)"/>
+      <ellipse cx="50" cy="-50" rx="50" ry="30" fill="url(#petalGrad)" transform="rotate(-45 50 -50)"/>
+      <ellipse cx="-50" cy="50" rx="50" ry="30" fill="url(#petalGrad)" transform="rotate(-45 -50 50)"/>
+      <ellipse cx="50" cy="50" rx="50" ry="30" fill="url(#petalGrad)" transform="rotate(45 50 50)"/>
+    </g>
+    <circle cx="0" cy="0" r="45" fill="#e65100"/>
+    <circle cx="-15" cy="-8" r="3" fill="#4e342e"/>
+    <circle cx="10" cy="-15" r="3" fill="#4e342e"/>
+    <circle cx="18" cy="10" r="3" fill="#4e342e"/>
+    <circle cx="-5" cy="18" r="3" fill="#4e342e"/>
+    <circle cx="-20" cy="5" r="3" fill="#4e342e"/>
+    <circle cx="5" cy="0" r="3" fill="#4e342e"/>
+  </g>
+
+  <!-- second small flower -->
+  <g transform="translate(560,380) scale(0.5)">
+    <ellipse cx="0" cy="-70" rx="34" ry="55" fill="#fff176"/>
+    <ellipse cx="0" cy="70" rx="34" ry="55" fill="#fff176"/>
+    <ellipse cx="-70" cy="0" rx="55" ry="34" fill="#fff176"/>
+    <ellipse cx="70" cy="0" rx="55" ry="34" fill="#fff176"/>
+    <circle cx="0" cy="0" r="45" fill="#f57f17"/>
+  </g>
+
+  <!-- bee body -->
+  <g transform="translate(300,150) rotate(-15)">
+    <!-- wings -->
+    <ellipse cx="10" cy="-18" rx="30" ry="18" fill="#e1f5fe" opacity="0.85" stroke="#90caf9" stroke-width="1.5"/>
+    <ellipse cx="-10" cy="-18" rx="30" ry="18" fill="#e1f5fe" opacity="0.85" stroke="#90caf9" stroke-width="1.5"/>
+
+    <!-- abdomen -->
+    <ellipse cx="0" cy="10" rx="34" ry="24" fill="#fdd835"/>
+    <path d="M -34 4 A 34 24 0 0 0 -34 16 Z" fill="#3e2723"/>
+    <path d="M -14 -12 A 34 24 0 0 0 -14 32" fill="none" stroke="#3e2723" stroke-width="8"/>
+    <path d="M 6 -14 A 34 24 0 0 0 6 34" fill="none" stroke="#3e2723" stroke-width="8"/>
+    <path d="M 26 -8 A 34 24 0 0 0 26 28" fill="none" stroke="#3e2723" stroke-width="8"/>
+
+    <!-- head -->
+    <circle cx="-40" cy="4" r="16" fill="#3e2723"/>
+    <circle cx="-46" cy="-1" r="3.5" fill="#fff"/>
+    <circle cx="-46" cy="-1" r="1.6" fill="#212121"/>
+
+    <!-- antennae -->
+    <path d="M -48 -10 C -58 -22, -60 -30, -56 -36" stroke="#3e2723" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M -36 -12 C -40 -26, -38 -34, -30 -38" stroke="#3e2723" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- stinger -->
+    <path d="M 34 10 L 46 10 L 34 4 Z" fill="#3e2723"/>
+  </g>
+
+  <!-- motion lines -->
+  <path d="M250 110 Q 270 100 290 112" stroke="#fbc02d" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M245 130 Q 265 122 283 132" stroke="#fbc02d" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- small grass tufts -->
+  <path d="M120 500 L110 450 M130 500 L135 445 M145 500 L150 460" stroke="#558b2f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M650 500 L640 455 M665 500 L670 450 M685 500 L690 465" stroke="#558b2f" stroke-width="5" stroke-linecap="round"/>
+</svg>
